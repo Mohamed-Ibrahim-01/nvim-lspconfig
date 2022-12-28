@@ -7381,7 +7381,14 @@ require'lspconfig'.tailwindcss.setup{}
         invalidVariant = "error",
         recommendedVariantOrder = "warning"
       },
-      validate = true
+      showPixelEquivalents = true,
+      includeLanguages = {},
+      files = { exclude = {"**/.git/**", "**/node_modules/**", "**/.hg/**", "**/.svn/**"} },
+      validate = true,
+      experimental = {
+        classRegex = {},
+        configFile = nil
+      }
     }
   }
   ```
